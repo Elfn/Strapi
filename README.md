@@ -11,10 +11,5 @@ npx create-strapi-app my-project
 npm run strapi develop
 
 
-API URLS
-http://localhost:1337/auth/local
-http://localhost:1337/products
-http://localhost:1337/products/1
-http://localhost:1337/categories
-http://localhost:1337/categories/1
-http://localhost:1337/products?_limit=2&_sort=title
+## API Documentation
+https://documenter.getpostman.com/view/4346170/UUy1dmcy
