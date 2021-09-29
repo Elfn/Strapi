@@ -6,15 +6,18 @@
  */
 
 module.exports = {
-  // async find(ctx){
+  //To customize API's output
+  async find(ctx){
 
-  //   const products = await strapi.services.product.find(ctx.query)
+    console.log(ctx.response)
+    const products = await strapi.services.product.find(ctx.query)
 
-  //   return products.map((product) =>
-  //     [
-  //       product.title,
-  //       product.description
-  //     ]
-  //   )
+    return products.map((product) =>
+      [
+        product.title,
+        product.description
+      ]
+    )
 
-};
+}
+}

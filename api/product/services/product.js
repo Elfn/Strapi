@@ -6,5 +6,8 @@
  */
 
 module.exports = {
-
+  find(params, populate) {
+    console.log(populate)
+    return strapi.query('product').find(params, populate);
+  },
 };
